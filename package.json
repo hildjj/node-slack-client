@@ -7,7 +7,9 @@
     "test": "mocha --compilers coffee:coffee-script/register --reporter spec",
     "prepublish": "grunt prepublish"
   },
-  "bin": "./bin/slack",
+  "bin": {
+    "slack": "./bin/slack"
+  },
   "keywords": [
     "slack"
   ],
