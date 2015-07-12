@@ -23,9 +23,6 @@ module.exports = (grunt) ->
     coffee:
       options:
         bare: true
-      index:
-        files:
-          'index.js': 'index.coffee'
       examples:
         expand: true
         cwd: 'examples'
@@ -36,7 +33,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'src'
         src: ['*.coffee']
-        dest: 'src'
+        dest: 'lib/'
         ext: '.js'
 
   grunt.registerTask 'prepublish', ['coffee']
